@@ -1,5 +1,5 @@
 import random
-import hangman_stages   # create hangman stages in a separate file
+import hangman_stages   # create hangman stages in a separate file or refer from line 30..
 import word_file        # create a file containing few words
 
 lives = 6
@@ -27,3 +27,54 @@ while not game_over:
         game_over = True
         print("You Win")
     print(hangman_stages.stages[lives])
+#here is the hangman stages file:
+stages = ["""
+       -----
+       |    |
+       O    |
+      /|\   |
+      / \   |
+            |
+    ""","""
+       -----
+       |   |
+       O   |
+      /|\  |
+      /    |
+           |
+    ""","""
+       -----
+       |   |
+       O   |
+      /|\  |
+           |
+           |
+    ""","""
+       -----
+      |   |
+      O   |
+     /|   |
+          |
+          |
+    ""","""
+       -----
+       |   |
+       O   |
+       |   |
+           |
+           |
+    ""","""
+       -----
+       |   |
+       O   |
+           |
+           |
+           |
+    ""","""
+       -----
+       |   |
+           |
+           |
+           |
+           |
+    """]
