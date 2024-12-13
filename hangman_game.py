@@ -1,6 +1,6 @@
 import random
 import hangman_stages   # create hangman stages in a separate file or refer from line 30..
-import word_file        # create a file containing few words
+import word_file        # create a file containing few words....
 
 lives = 6
 chosen_word = random.choice(word_file.words)
